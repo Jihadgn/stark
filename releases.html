@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+     
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="18">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </form>
+
+                    <div class="dropdown d-inline-block d-lg-none ml-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-account-circle font-size-17 align-middle mr-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-wallet font-size-17 align-middle mr-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><span
+                                    class="badge badge-success float-right">11</span><i
+                                    class="mdi mdi-settings font-size-17 align-middle mr-1"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-lock-open-outline font-size-17 align-middle mr-1"></i> Lock
+                                screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i
+                                    class=" font-size-17 align-middle mr-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar="init" class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="h-100">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                <span>الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customer_service.html">
+                                <i class="fa fa-headphones"></i>
+                                <span>خدمة العملاء</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accounts.html">
+                                <i class="fa fa-calendar"></i>
+                                <span>الحسابات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="role.html">
+                                <i class="fa fa-users"></i>
+                                <span>صلاحيات المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="delivery.html">
+                                <i class="fa fa-ship"></i>
+                                <span>كباتن التوصيل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <i class="fa fa-box-open"></i>
+                                <span>ادارة المنتجات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stores.html">
+                                <i class="fa fa-home"></i>
+                                <span>ادارة المخازن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="users.html">
+                                <i class="fa fa-users"></i>
+                                <span>ادارة المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html">
+                                <i class="mdi mdi-city-variant"></i>
+                                <span>ادارةالمدن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="main-products.html">
+                                <i class="fa fa-boxes"></i>
+                                <span>منتجات الصفحة الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ads.html">
+                                <i class>ads</i>
+                                <span>البنرات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="releases.html">
+                                <i class="mdi mdi-update"></i>
+                                <span>الاصدارات</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid pt-4 pb-4">
+
+                    <!-- start page title -->
+                    <div class="row justify-content-center pt-2">
+                        <div class="col-10">
+                            <div class="card bg-white " style="color:black;">
+                                <div class="card-body  ">
+                                    <div class="row pb-3">
+                                        <div class="col-lg-3 col-md-4 col-sm-4 pt-2">
+                                            <select type="text" name="group_id" id="group_id" class="form-control h-100">
+                                                <option value="1">Android</option>
+                                                <option value="2">ios</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-4 pt-2">
+                                            <input type="text" placeholder="رقم الاصدار" class="form-control h-100">
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-4 pt-2 ">
+                                            <button class="btn-info btn-lg ">Save</button>
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr class="font-size-16 font-weight-bolder text-dark">
+                                                    <th>ID</th>
+                                                    <th>النسخة</th>
+                                                    <th>تحديث </th>
+                                                    <th>Action</th>
+        
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> 1</td>
+                                                    <td> 1.0.1 </td>
+                                                    <td><button class="btn btn-rounded btn-success">android</button> </td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" class="custom-control-input" id="captain"
+                                                                checked="">
+                                                            <label class="custom-control-label" for="captain"></label> تحديث
+                                                            اجباري
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2</td>
+                                                    <td> 1.0.1 </td>
+                                                    <td><button class="btn btn-rounded btn-success">iOS</button> </td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" class="custom-control-input" id="captain1"
+                                                                checked="">
+                                                            <label class="custom-control-label" for="captain1"></label> تحديث
+                                                            اجباري
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 2</td>
+                                                    <td> 1.0.3 </td>
+                                                    <td><button class="btn btn-rounded btn-success">android</button> </td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" class="custom-control-input" id="captain2"
+                                                                checked="">
+                                                            <label class="custom-control-label" for="captain2"></label> تحديث
+                                                            اجباري
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <!-- end row -->
+
+                        <!-- end row -->
+
+
+                        <!-- End Page-content -->
+
+
+
+                        <footer class="footer">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12">
+                                        © MndSoft<span class="d-none d-sm-inline-block"> - Crafted with <i
+                                                class="mdi mdi-heart text-danger"></i> by </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+
+                    </div>
+
+                    <!-- end main content-->
+
+                    <!-- END layout-wrapper -->
+
+                    <!-- Right bar overlay-->
+                    <div class="rightbar-overlay"></div>
+
+                    <!-- JAVASCRIPT -->
+                    <script src="assets/libs/jquery/jquery.min.js"></script>
+                    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+                    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+                    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+                    <!-- Peity chart-->
+                    <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+                    <!-- Plugin Js-->
+                     
+                     
+
+                     
+
+                    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

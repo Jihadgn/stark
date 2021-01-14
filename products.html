@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="18">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </form>
+
+                    <div class="dropdown d-inline-block d-lg-none ml-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-account-circle font-size-17 align-middle mr-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-wallet font-size-17 align-middle mr-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><span
+                                    class="badge badge-success float-right">11</span><i
+                                    class="mdi mdi-settings font-size-17 align-middle mr-1"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-lock-open-outline font-size-17 align-middle mr-1"></i> Lock
+                                screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i
+                                    class="font-size-17 align-middle mr-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar="init" class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="h-100">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                <span>الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customer_service.html">
+                                <i class="fa fa-headphones"></i>
+                                <span>خدمة العملاء</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accounts.html">
+                                <i class="fa fa-calendar"></i>
+                                <span>الحسابات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="role.html">
+                                <i class="fa fa-users"></i>
+                                <span>صلاحيات المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="delivery.html">
+                                <i class="fa fa-ship"></i>
+                                <span>كباتن التوصيل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <i class="fa fa-box-open"></i>
+                                <span>ادارة المنتجات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stores.html">
+                                <i class="fa fa-home"></i>
+                                <span>ادارة المخازن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="users.html">
+                                <i class="fa fa-users"></i>
+                                <span>ادارة المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html">
+                                <i class="mdi mdi-city-variant"></i>
+                                <span>ادارةالمدن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="main-products.html">
+                                <i class="fa fa-boxes"></i>
+                                <span>منتجات الصفحة الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ads.html">
+                                <i class>ads</i>
+                                <span>البنرات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="releases.html">
+                                <i class="mdi mdi-update"></i>
+                                <span>الاصدارات</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <div class="default-tab bg-white mt-5 pt-2">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item ">
+                                <a class="nav-link active" data-toggle="tab" href="#produts">
+                                    المنتجات
+                                </a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" data-toggle="tab" href="#brand">
+                                    العلامات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link" data-toggle="tab" href="#discunt">
+                                    الخصم
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " data-toggle="tab" href="#cobon">
+                                    الكوبون
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " data-toggle="tab" href="#review">
+                                    عرض
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="produts">
+                                <div class="row justify-content-end mx-1 mt-1 ">
+                                    <div class="col-md-12 text-dark">
+                                        <button type="button" class="btn btn-info  float-right waves-effect waves-light" data-toggle="modal" data-target="#exampleModal">
+                                            إضافة <i class="mdi mdi-plus"></i>
+                                          </button>								
+                                          <div dir="rtl" class="modal fade  hide" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="display: none; padding-right: 15px;">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                
+                                                <div class="modal-header text-white bg-info">
+                                                  <h5 class="modal-title" id="exampleModalLabel">إضافة منتج</h5>
+                                                </div>
+                                                
+                                                <form action="users" method="post">
+                                                  <input type="hidden" name="_token" value="V1zrWyWP67CYsmAzW2puDVyJqrcRwecoGXjyz4bu">                            <div class="modal-body">
+                                                                          
+                                                    <div class="container">
+                      
+                                                      <!-- User Full Name Field -->
+                                                      <div class="col-12 ">
+                                                        <label  class="text-left text-dark">SKU</label>
+                                                        <input type="text" class="form-control " placeholder="SKU">
+                                                    
+                                                      </div>
+                                                      <!-- User Email Field -->
+                                                      <div class="col-12 pt-2 ">
+                                                        <label  class="text-left text-dark">الشعار</label>
+                                                        <input type="file" class="form-control" name="brand_logo" id="brand_logo" placeholder="Brand Name English">                                                    
+                                                      </div>
+                      
+                                                      <!-- User Password Field -->
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> اسم المنتج</label>
+                                                        <input type="text" class="form-control " placeholder="اسم المنتج">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> الباركود</label>
+                                                        <input type="text" class="form-control " placeholder=" الباركود">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> علامةتجارية </label>
+                                                        <input type="text" class="form-control " placeholder=" علامةتجارية">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> جودة </label>
+                                                        <input type="text" class="form-control " placeholder=" جودة">
+                                                    
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <div class="row col-md-12">
+                                                        <button type="button" class="btn btn-info waves-effect waves-light">إضافة</button>
+                                                        <button type="button" class="btn btn-danger waves-effect waves-light ml-2" data-dismiss="modal">خروج</button>
+                                                    </div>
+                                                  </div>
+                      
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 text-center  ">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered" cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr class="font-size-16 font-weight-bolder text-dark">
+                                                                <th>SKU</th>
+                                                                <th>الشعار</th>
+                                                                <th>اسم المنتج</th>
+                                                                <th>الباركود</th>
+                                                                <th>علامةتجارية</th>
+                                                                <th>جودة</th>
+                                                                <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>rw</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 2652<br>2658<br>2654<br>485<br>7548</td>
+                                                                <td> Stark </td>
+                                                                <td> 20-20-20 </td>
+                                                                <td> <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="captain"
+                                                                            checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="captain"></label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="bg-light">
+                                                                <td>rw</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 2652<br>2658<br>2654<br>485<br>7548</td>
+                                                                <td> Stark </td>
+                                                                <td> 20-20-20 </td>
+                                                                <td> <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="captain1"
+                                                                            checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="captain1"></label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>rw</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 2652<br>2658<br>2654<br>485<br>7548</td>
+                                                                <td> Stark </td>
+                                                                <td> 20-20-20 </td>
+                                                                <td> <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="captain2"
+                                                                            checked="">
+                                                                        <label class="custom-control-label"
+                                                                            for="captain2"></label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="brand">
+                                <div class="row justify-content-end mx-1 mt-1 ">
+                                    <div class="col-md-12 text-dark">
+                                        <button type="button" class="btn btn-info  float-right waves-effect waves-light" data-toggle="modal" data-target="#example">
+                                            إضافة <i class="mdi mdi-plus"></i>
+                                          </button>								
+                                          <div dir="rtl" class="modal fade  hide" id="example" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="display: none; padding-right: 15px;">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                
+                                                <div class="modal-header text-white bg-info">
+                                                  <h5 class="modal-title" id="exampleModalLabel">إضافة منتج</h5>
+                                                </div>
+                                                
+                                                <form action="users" method="post">
+                                                  <input type="hidden" name="_token" value="V1zrWyWP67CYsmAzW2puDVyJqrcRwecoGXjyz4bu">                            <div class="modal-body">
+                                                                          
+                                                    <div class="container">
+                      
+                                                      <!-- User Full Name Field -->
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark">ID</label>
+                                                        <input type="text" class="form-control " placeholder="ID">
+                                                    
+                                                      </div>
+                                                      <!-- User Email Field -->
+                                                      <div class="col-12 pt-2 ">
+                                                        <label  class="text-left text-dark">الشعار</label>
+                                                        <input type="file" class="form-control" name="brand_logo" id="brand_logo" placeholder="Brand Name English">                                                    
+                                                      </div>
+                      
+                                                      <!-- User Password Field -->
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> علامةتجارية </label>
+                                                        <input type="text" class="form-control " placeholder=" علامةتجارية">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> عدد المنتجات</label>
+                                                        <input type="text" class="form-control " placeholder=" عدد المنتجات">
+                                                    
+                                                      </div>
+                                                     
+                                                    </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <div class="row col-md-12">
+                                                        <button type="button" class="btn btn-info waves-effect waves-light">إضافة</button>
+                                                        <button type="button" class="btn btn-danger waves-effect waves-light ml-2" data-dismiss="modal">خروج</button>
+                                                    </div>
+                                                  </div>
+                      
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 text-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered" cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr class="font-size-16 font-weight-bolder text-dark">
+                                                                <th>Id</th>
+                                                                <th>الشعار</th>
+                                                                <th>العلامةالتجارية</th>
+                                                                <th>عدد المنتجات</th>
+                                                                <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 24</td>
+
+                                                                <td>
+                                                                    <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="bg-light">
+                                                                <td>2</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 24</td>
+
+                                                                <td>
+                                                                    <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> toxido DTCF </td>
+                                                                <td> 24</td>
+
+                                                                <td>
+                                                                    <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="discunt">
+                                <div class="row justify-content-end mx-1 mt-1 " >
+                                    <div class="col-md-12 text-dark">
+                                        <button type="button" class="btn btn-info  float-right waves-effect waves-light" data-toggle="modal" data-target="#exampl">
+                                            إضافة <i class="mdi mdi-plus"></i>
+                                          </button>								
+                                          <div dir="rtl" class="modal fade  hide" id="exampl" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="display: none; padding-right: 15px;">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                
+                                                <div class="modal-header text-white bg-info">
+                                                  <h5 class="modal-title" id="exampleModalLabel">إضافة خصم</h5>
+                                                </div>
+                                                
+                                                <form action="users" method="post">
+                                                  <input type="hidden" name="_token" value="V1zrWyWP67CYsmAzW2puDVyJqrcRwecoGXjyz4bu">                            <div class="modal-body">
+                                                                          
+                                                    <div class="container">
+
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark">المنتج </label>
+                                                        <input type="text" class="form-control " placeholder="المنتج">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> المبلغ</label>
+                                                        <input type="text" class="form-control " placeholder=" المبلغ">
+                                                    
+                                                      </div>
+                                                     
+                                                    </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <div class="row col-md-12">
+                                                        <button type="button" class="btn btn-info waves-effect waves-light">إضافة</button>
+                                                        <button type="button" class="btn btn-danger waves-effect waves-light ml-2" data-dismiss="modal">خروج</button>
+                                                    </div>
+                                                  </div>
+                      
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 text-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered" cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr class="font-size-16 font-weight-bolder text-dark">
+                                                                <th>ID</th>
+                                                                <th>المبلغ</th>
+                                                                <th>اسم المنتج</th>
+                                                                <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td> 10% </td>
+                                                                <td> Stark </td>
+                                                                <td> <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+                                                                    <a href="" class="mdi mdi-lock text-danger"
+                                                                        style="font-size: 30px; " data-toggle="modal"
+                                                                        data-target="#modalConfirmDelete1"></a>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="cobon">
+                                <div class="row justify-content-end mx-1 mt-1 " >
+                                    <div class="col-md-12 text-dark">
+                                        <button type="button" class="btn btn-info  float-right waves-effect waves-light" data-toggle="modal" data-target="#example1">
+                                            إضافة <i class="mdi mdi-plus"></i>
+                                          </button>								
+                                          <div dir="rtl" class="modal fade  hide" id="example1" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="display: none; padding-right: 15px;">
+                                            <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                
+                                                <div class="modal-header text-white bg-info">
+                                                  <h5 class="modal-title" id="exampleModalLabel">إضافة كوبون</h5>
+                                                </div>
+                                                
+                                                <form action="users" method="post">
+                                                  <input type="hidden" name="_token" value="V1zrWyWP67CYsmAzW2puDVyJqrcRwecoGXjyz4bu">                            
+                                                  <div class="modal-body">
+                                                                          
+                                                    <div class="container">
+
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark">الكوبون </label>
+                                                        <input type="text" class="form-control " placeholder="الكوبون">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> القيمة</label>
+                                                        <input type="text" class="form-control " placeholder=" القيمة">
+                                                    
+                                                      </div>
+                                                      <div class="col-12 pt-2">
+                                                        <label  class="text-left text-dark"> المستخدم</label>
+                                                        <input type="text" class="form-control " placeholder=" المستخدم">
+                                                    
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <div class="row col-md-12">
+                                                        <button type="button" class="btn btn-info waves-effect waves-light">إضافة</button>
+                                                        <button type="button" class="btn btn-danger waves-effect waves-light ml-2" data-dismiss="modal">خروج</button>
+                                                    </div>
+                                                  </div>
+                      
+                                                </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 text-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered" cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr class="font-size-16 font-weight-bolder text-dark">
+                                                                <th>ID</th>
+                                                                <th>الكوبون</th>
+                                                                <th>القيمة</th>
+                                                                <th>المستخدمين</th>
+                                                                <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr >
+                                                            <td>1</td>
+                                                            <td>84725</td>
+                                                            <td>21</td>
+                                                            <td>جهاد محمد</td>
+                                                            <td><a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                    style="font-size: 25px;"></a></td>
+
+                                                            </tr>
+                                                            </tr >
+                                                            <tr class="bg-light">
+                                                            <td>2</td>
+                                                            <td>85894</td>
+                                                            <td>20</td>
+                                                            <td>جهاد محمد</td>
+                                                            <td><a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                    style="font-size: 25px;"></a></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>1854857</td>
+                                                                <td>15</td>
+                                                                <td>جهاد محمد</td>
+                                                                <td><a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a></td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="review">
+
+                                <div class="row">
+                                    <div class="col-xl-12 text-center">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered" cellspacing="0" width="100%">
+                                                        <thead>
+                                                            <tr class="font-size-16 font-weight-bolder text-dark">
+                                                                <th>الشعار</th>
+                                                                <th>اسم المستخدم</th>
+                                                                <th>اسم المنتج</th>
+                                                                <th>التقييم</th>
+                                                                <th>تعليق</th>
+                                                                <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> محمد موسى </td>
+                                                                <td> قبعة </td>
+                                                                <td> 2 </td>
+                                                                <td> شكرا </td>
+                                                                <td>
+                                                                    <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="bg-light">
+                                                                <td> <img src="assets/images/logo-sm.png" height="30px"
+                                                                        width="50px" alt=""> </td>
+                                                                <td> جهاد محمد </td>
+                                                                <td> ملابس رجالية </td>
+                                                                <td> 5 </td>
+                                                                <td> ممتاز </td>
+                                                                <td>
+
+                                                                    <a class="mdi mdi-eye mr-3 text-info" href="#"
+                                                                        style="font-size: 25px;"></a>
+
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end row -->
+
+                        <!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                © MndSoft<span class="d-none d-sm-inline-block"> - Crafted with <i
+                                        class="mdi mdi-heart text-danger"></i> by </span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <!-- Peity chart-->
+        <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+        <!-- Plugin Js-->
+
+
+
+
+
+        <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

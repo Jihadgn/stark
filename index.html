@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+     
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="18">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="fa fa-search"></span>
+                        </div>
+                    </form>
+
+                    <div class="dropdown d-inline-block d-lg-none ml-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn header-item ml-2 noti-icon waves-effect" data-toggle="fullscreen">
+                        <i class="mdi mdi-fullscreen"></i>
+                    </button>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                                alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-account-circle font-size-17 align-middle mr-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-wallet font-size-17 align-middle mr-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><span
+                                    class="badge badge-success float-right">11</span><i
+                                    class="mdi mdi-settings font-size-17 align-middle mr-1"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i
+                                    class="mdi mdi-lock-open-outline font-size-17 align-middle mr-1"></i> Lock
+                                screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i
+                                    class="font-size-17 align-middle mr-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar="init" class="h-100 ">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="h-100">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                <span>الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customer_service.html">
+                                <i class="fa fa-headphones"></i>
+                                <span>خدمة العملاء</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="accounts.html">
+                                <i class="fa fa-calendar"></i>
+                                <span>الحسابات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="role.html">
+                                <i class="fa fa-users"></i>
+                                <span>صلاحيات المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="delivery.html">
+                                <i class="fa fa-ship"></i>
+                                <span>كباتن التوصيل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.html">
+                                <i class="fa fa-box-open"></i>
+                                <span>ادارة المنتجات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="stores.html">
+                                <i class="fa fa-home"></i>
+                                <span>ادارة المخازن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="users.html">
+                                <i class="fa fa-users"></i>
+                                <span>ادارة المستخدمين</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="city.html">
+                                <i class="mdi mdi-city-variant"></i>
+                                <span>ادارةالمدن</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="main-products.html">
+                                <i class="fa fa-boxes"></i>
+                                <span>منتجات الصفحة الرئيسية</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ads.html">
+                                <i class>ads</i>
+                                <span>البنرات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="releases.html">
+                                <i class="mdi mdi-update"></i>
+                                <span>الاصدارات</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="page-title-box">
+                                <h4 class="font-size-18">لوحة التحكم</h4>
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item active">عرض تفاصيل آخرالطلبيات</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3 ">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+                            <div class="card mini-stat  bg-primary stark" style="height: 130px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                       
+                                        <div class="col-3 mt-2  ml-3 text-white" >
+                                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.2426 16.3137L6 12.071L7.41421 10.6568L10.2426 13.4853L15.8995 7.8284L17.3137 9.24262L10.2426 16.3137Z"
+                                                    fill="currentColor" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                                                    fill="currentColor" /></svg> 
+                                        </div>
+                                        <div class="col-7 mt-4 text-white">
+                                            <h4 >الجديدة</h4>
+                                        </div>
+                                        <div class="mini-stat-label bg-success">
+                                            <h3 class="mb-0 mr-1">+ 5</h3>
+                                        </div>
+                                        <p class="text-white-50 ml-4 mt-1">اخرها بتاريخ 20-12-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+                            <div class="card mini-stat stark bg-primary " style="height: 130px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                       
+                                        <div class="col-3 mt-2  ml-3 text-white">
+                                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                                                    fill="currentColor" /></svg> 
+                                                </div>
+                                        <div class="col-7 mt-4 text-white">
+                                            <h4 > الشحن</h4>
+                                        </div>
+                                        <div class="mini-stat-label bg-info">
+                                            <h3 class="mb-0 mr-1">+ 3</h3>
+                                        </div>
+                                        <p class="text-white-50 ml-4 mt-1">اخرها بتاريخ 20-12-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+                            <div class="card mini-stat stark bg-primary " style="height: 130px;">
+                                <div class="card-body">
+                                    <div class="row ">
+                                        
+                                        <div class="col-3 mt-2 ml-3 text-white">
+                                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
+                                                    fill="currentColor" /></svg> 
+                                        </div>
+                                        <div class="col-8 mt-4 text-white">
+                                            <h4 > التوصيل</h4>
+                                        </div>
+                                        <div class="mini-stat-label bg-warning">
+                                            <h3 class="mb-0 mr-1">+ 3</h3>
+                                        </div>
+                                        <p class="text-white-50 ml-4 mt-1">اخرها بتاريخ 20-12-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+                            <div class="card mini-stat stark bg-primary " style="height: 130px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3 mt-2 ml-3  text-white" >
+                                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z"
+                                                    fill="currentColor" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                                                    fill="currentColor" /></svg>
+                                        </div>
+                                        <div class="col-7 mt-4 text-white">
+                                            <h4 >الملغية</h4>
+                                        </div>
+                                        <div class="mini-stat-label bg-danger">
+                                            <h3 class="mb-0 mr-1">+ 2</h3>
+                                        </div>
+                                        <p class="text-white-50 ml-4 mt-1">اخرها بتاريخ 20-12-2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+                    <div class="default-tab ">
+                        <ul class="nav nav-tabs bg-white text-dark"  >
+                            <li class="nav-item pl-3">
+                                <a class="nav-link active" data-toggle="tab" href="#pending">
+                                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.2426 16.3137L6 12.071L7.41421 10.6568L10.2426 13.4853L15.8995 7.8284L17.3137 9.24262L10.2426 16.3137Z"
+                                        fill="currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                                        fill="currentColor" /></svg>
+                                </a>
+                            </li>
+
+                            <li class="nav-item  pl-3">
+                                <a class="nav-link" data-toggle="tab" href="#shipping">
+                                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                                        fill="currentColor" /></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item  pl-3">
+
+                                <a class="nav-link" data-toggle="tab" href="#delivered">
+                                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 5C11 4.44772 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V12.1578L16.2428 8.91501L17.657 10.3292L12.0001 15.9861L6.34326 10.3292L7.75748 8.91501L11 12.1575V5Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M4 14H6V18H18V14H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V14Z"
+                                        fill="currentColor" /></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item   pl-3">
+                                <a class="nav-link " data-toggle="tab" href="#home">
+                                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.3394 9.32245C16.7434 8.94589 16.7657 8.31312 16.3891 7.90911C16.0126 7.50509 15.3798 7.48283 14.9758 7.85938L12.0497 10.5866L9.32245 7.66048C8.94589 7.25647 8.31312 7.23421 7.90911 7.61076C7.50509 7.98731 7.48283 8.62008 7.85938 9.0241L10.5866 11.9502L7.66048 14.6775C7.25647 15.054 7.23421 15.6868 7.61076 16.0908C7.98731 16.4948 8.62008 16.5171 9.0241 16.1405L11.9502 13.4133L14.6775 16.3394C15.054 16.7434 15.6868 16.7657 16.0908 16.3891C16.4948 16.0126 16.5171 15.3798 16.1405 14.9758L13.4133 12.0497L16.3394 9.32245Z"
+                                        fill="currentColor" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                                        fill="currentColor" /></svg>                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade " id="home" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped  " id="pendingOrders"
+                                                        cellspacing="0" width="100%">
+                                                        <thead class=" bg-secondary">
+                                                            <tr class="font-size-16 font-weight-bolder">
+                                                                <th>رقم</th>
+
+                                                                <th>اسم العميل</th>
+
+                                                                <th>المدينة</th>
+
+                                                                <th>الوقت والتاريخ</th>
+
+                                                                <th>السعر الكلي</th>
+
+                                                                <th>الحالة</th>
+
+                                                                <th colspan="2">العملية</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+
+                                                            <tr>
+                                                                <td>26</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>02/01/2021 16:20</td>
+                                                                <td>865.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-danger">ملغية</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 19:08</td>
+                                                                <td>940.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-danger">ملغية</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tr>
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="delivered">
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped  " id="pendingOrders"
+                                                        cellspacing="0" width="100%">
+                                                        <thead class=" bg-secondary">
+                                                            <tr class="font-size-16 font-weight-bolder">
+                                                                <th>رقم</th>
+
+                                                                <th>اسم العميل</th>
+
+                                                                <th>المدينة</th>
+
+                                                                <th>الوقت والتاريخ</th>
+
+                                                                <th>السعر الكلي</th>
+
+                                                                <th>الحالة</th>
+
+                                                                <th colspan="2">العملية</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+
+                                                            <tr>
+                                                                <td>26</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>02/01/2021 16:20</td>
+                                                                <td>865.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-warning">تم التوصيل</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 19:08</td>
+                                                                <td>940.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-warning">تم التوصيل</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>23</td>
+                                                                <td>
+                                                                    جهاد محمد</td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 17:23</td>
+                                                                <td>1100.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-warning">تم التوصيل</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tr>
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="shipping">
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped " id="shipping"
+                                                        cellspacing="0" width="100%">
+                                                        <thead class=" bg-secondary">
+                                                            <tr class="font-size-16 font-weight-bolder">
+                                                                <th>رقم</th>
+
+                                                                <th>اسم العميل</th>
+
+                                                                <th>المدينة</th>
+
+                                                                <th>الوقت والتاريخ</th>
+
+                                                                <th>السعر الكلي</th>
+
+                                                                <th>الحالة</th>
+
+                                                                <th colspan="2">العملية</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+
+                                                            <tr>
+                                                                <td>26</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>02/01/2021 16:20</td>
+                                                                <td>865.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-info">تم الشحن</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 19:08</td>
+                                                                <td>940.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-info">تم الشحن</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>23</td>
+                                                                <td>
+                                                                    جهاد محمد</td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 17:23</td>
+                                                                <td>1100.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-info">تم الشحن</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            </tr>
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade show active" id="pending">
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped " id="pending"
+                                                        cellspacing="0" width="100%">
+                                                        <thead class=" bg-secondary">
+                                                            <tr class="font-size-16 font-weight-bolder">
+                                                                <th>رقم</th>
+
+                                                                <th>اسم العميل</th>
+
+                                                                <th>المدينة</th>
+
+                                                                <th>الوقت والتاريخ</th>
+
+                                                                <th>السعر الكلي</th>
+
+                                                                <th>الحالة</th>
+
+                                                                <th colspan="2">العملية</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+
+                                                            <tr>
+                                                                <td>26</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>02/01/2021 16:20</td>
+                                                                <td>865.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">جديدة</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>24</td>
+                                                                <td>
+                                                                    جهاد محمد </td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 19:08</td>
+                                                                <td>940.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">جديدة</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>15</td>
+                                                                <td>
+                                                                    جهاد محمد</td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 17:23</td>
+                                                                <td>1100.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">جديدة</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>27</td>
+                                                                <td>
+                                                                    جهاد محمد</td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 17:23</td>
+                                                                <td>1100.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">جديدة</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>29</td>
+                                                                <td>
+                                                                    جهاد محمد</td>
+                                                                <td>الرياض</td>
+                                                                <td>29/10/2020 17:23</td>
+                                                                <td>1100.00</td>
+                                                                <td>
+                                                                    <span class="badge badge-success">جديدة</span>
+                                                                </td>
+                                                                <td><div class="dropdown ">
+                                                                    <button type="button" class="btn bg-soft-info sharp" data-toggle="dropdown" aria-expanded="true">
+                                                                        <svg width="18px" height="18px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
+                                                                    </button>
+                                                                    <div class="dropdown-menu " x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                                                        <a class="dropdown-item" href="#">طباعة </a>
+                                                                        <a class="dropdown-item" href="orderdetail.html">عرض</a>
+                                                                    </div>
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end row -->
+
+                    <!-- end row -->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            © MndSoft<span class="d-none d-sm-inline-block"> - Crafted with <i
+                                    class="mdi mdi-heart text-danger"></i> by </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Peity chart-->
+    <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+    <!-- Plugin Js-->
+     
+     
+
+     
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
